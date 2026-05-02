@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* =========================
+   🎨 VARIABLES GLOBALES
+========================= */
+
+:root {
+  --background: hsl(0, 0%, 2%);
+  --foreground: hsl(216, 15%, 72%);
+
+  --card: hsl(220, 12%, 7%);
+  --card-foreground: hsl(216, 15%, 72%);
+
+  --popover: hsl(220, 12%, 7%);
+  --popover-foreground: hsl(216, 15%, 72%);
+
+  --primary: hsl(185, 100%, 50%);
+  --primary-foreground: hsl(0, 0%, 2%);
+
+  --secondary: hsl(220, 10%, 12%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+
+  --muted: hsl(220, 10%, 12%);
+  --muted-foreground: hsl(216, 12%, 55%);
+
+  --border: hsl(220, 10%, 14%);
+  --input: hsl(220, 10%, 14%);
+  --ring: hsl(185, 100%, 50%);
+
+  --font-heading: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --radius: 6px;
+}
+
+/* =========================
+   🌙 BASE RESET
+========================= */
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+/* =========================
+   🧱 LAYOUT
+========================= */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* =========================
+   🧩 CARDS
+========================= */
+
+.card {
+  background: var(--card);
+  color: var(--card-foreground);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+/* =========================
+   🔘 BUTTONS
+========================= */
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.btn-secondary:hover {
+  opacity: 0.8;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--foreground);
+}
+
+.btn-ghost:hover {
+  background: var(--secondary);
+}
+
+/* =========================
+   📝 INPUTS
+========================= */
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--input);
+  color: var(--foreground);
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--ring);
+  box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.2);
+}
+
+/* =========================
+   🔤 TYPOGRAPHY
+========================= */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: white;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* =========================
+   ✨ EFFECTS
+========================= */
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), hsl(200, 100%, 70%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.15),
+              0 0 60px rgba(0, 255, 255, 0.05);
+}
+
+.glow-text {
+  text-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+}
+
+/* =========================
+   🎨 TEXT COLORS
+========================= */
+
+.text-background { color: var(--background); }
+.text-foreground { color: var(--foreground); }
+
+.text-primary { color: var(--primary); }
+.text-primary-foreground { color: var(--primary-foreground); }
+
+.text-secondary { color: var(--secondary); }
+.text-secondary-foreground { color: var(--secondary-foreground); }
+
+.text-muted { color: var(--muted); }
+.text-muted-foreground { color: var(--muted-foreground); }
+
+.text-card { color: var(--card-foreground); }
+.text-popover { color: var(--popover-foreground); }
+
+/* =========================
+   🎨 BACKGROUND COLORS
+========================= */
+
+.bg-background { background: var(--background); }
+.bg-card { background: var(--card); }
+.bg-popover { background: var(--popover); }
+
+.bg-primary { background: var(--primary); }
+.bg-secondary { background: var(--secondary); }
+.bg-muted { background: var(--muted); }
+
+/* =========================
+   🧱 BORDER
+========================= */
+
+.border { border: 1px solid var(--border); }
+.border-primary { border-color: var(--primary); }
+.border-muted { border-color: var(--muted); }
+
+/* =========================
+   🧩 INPUT / RING
+========================= */
+
+.ring {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* =========================
+   🔤 FONTS
+========================= */
+
+.font-heading { font-family: var(--font-heading); }
+.font-body { font-family: var(--font-body); }
+.font-mono { font-family: var(--font-mono); }
+
+/* =========================
+   📐 RADIUS
+========================= */
+
+.rounded { border-radius: var(--radius); }
+.rounded-sm { border-radius: calc(var(--radius) - 2px); }
+.rounded-lg { border-radius: calc(var(--radius) + 4px); }
