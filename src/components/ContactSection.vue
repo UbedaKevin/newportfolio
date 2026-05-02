@@ -24,7 +24,7 @@ const errorMessage = ref("")
 
 const handleSubmit = async (e) => {
   e.preventDefault()
-  
+
   if (sending.value) return
 
   sending.value = true
@@ -156,7 +156,7 @@ const handleSubmit = async (e) => {
               class="w-full bg-card border border-border text-white p-3 resize-none focus:border-primary outline-none"
             ></textarea>
           </div>
-          <div class="g-recaptcha" data-sitekey="TA_SITE_KEY_ICI"></div>
+          <div class="g-recaptcha" data-sitekey="6Le2udUsAAAAAE9br3vNm50v3dZyFhvbv1aQ8aU9"></div>
           <!-- BUTTON -->
           <button
             type="submit"
