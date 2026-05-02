@@ -24,7 +24,7 @@ export const projects = [
   {
     id: 1,
     title: "Revivo",
-    category: "Full-Stack",
+    category: "APP IA",
     problem: "Les images anciennes ou dégradées perdent en qualité, en couleurs et en détails, rendant leur exploitation difficile pour les utilisateurs.",
     solution: "Développement d'une application de restauration et colorisation d’images utilisant l’IA, permettant de reconstruire les détails, améliorer la netteté et recoloriser automatiquement les photos en quelques secondes.",
     stack: ["Vue 3", "Node.js", "Cloudinary", "Replicate AI", "PostgreSQL"],
@@ -36,7 +36,7 @@ export const projects = [
   {
     id: 2,
     title: "MackerProd",
-    category: "Application web full-stack",
+    category: "Application web",
     problem: "Un monteur vidéo freelance avait besoin d’une présence en ligne professionnelle pour présenter ses travaux et attirer des clients, mais ne disposait pas de portfolio structuré ni de système de prise de contact efficace.",
     solution: "Développement d’une application web full-stack avec un frontend Nuxt en SSR et un backend Node.js, déployée sur un VPS avec un nom de domaine personnalisé, permettant la mise en avant des projets et la gestion des demandes clients.",
     stack: ["Nuxt.js", "Vue.js", "Node.js", "Express.js", "VPS (IONOS)", "Linux"],
@@ -44,7 +44,7 @@ export const projects = [
     github: "https://github.com/tOCHSKa/mackerprodV2",
     backend: "https://github.com/tOCHSKa/mackerprodBackv2",
     demo: "https://www.mackerprod.com",
-    metric: "Déploiement réel utilisé par un client freelance en production",
+    metric: "Déploiement réél",
   },
   {
     id: 3,

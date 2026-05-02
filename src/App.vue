@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="overflow-x-hidden">
 
     <div class="fixed top-0 left-0 right-0 z-50  mx-auto" :class="scrolled ? 'nav-scrolled' : 'nav-default'">
       <NavBar />
@@ -20,6 +20,9 @@
     <div id="contact" class="min-h-screen bg-black">
       <ContactSection />
     </div>
+    <div>
+    <Footer />
+    </div>
     </div>
 
 </template>
@@ -33,6 +36,7 @@ import { projects } from "@/lib/portfolioData"
 import AboutSection from './components/AboutSection.vue'
 import SkillSection from './components/SkillSection.vue'
 import ContactSection from './components/ContactSection.vue'
+import Footer from './components/Footer.vue'
 
 const scrolled = ref(false)
 
@@ -64,3 +68,4 @@ onBeforeUnmount(() => {
   background: transparent;
 }
 </style>
+
