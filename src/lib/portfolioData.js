@@ -75,7 +75,7 @@ export const projects = [
 export const skills = {
   frontend: {
     label: "Interface Layer",
-    items: ["Vue.js", "TypeScript", "Tailwind CSS", "HTML5 / CSS3", "Framer Motion", "D3.js", "Storybook"],
+    items: ["Vue.js", "TypeScript", "Tailwind CSS", "HTML5 / CSS3"],
   },
   backend: {
     label: "Core Infrastructure",
