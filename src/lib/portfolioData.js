@@ -5,7 +5,7 @@ export const developerInfo = {
   status: "Disponible — CDI / Alternance / Freelance",
   email: "ysocomus59200@hotmail.com",
   linkedin: "https://www.linkedin.com/in/kevin-ubeda-400045292",
-  github: "https://github.com/tOCHSka",
+  github: "https://github.com/UbedaKevin/",
 };
 
 export const aboutData = {
